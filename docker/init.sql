@@ -1,1 +1,1 @@
-CREATE DATABASE IF NOT EXISTS upload_server_test;
+CREATE DATABASE IF NOT EXISTS upload_test;
