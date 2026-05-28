@@ -1,5 +1,5 @@
 {
-  "name": "upload-server",
+  "name": "server",
   "version": "1.0.0",
   "type": "module",
   "description": "",
@@ -15,7 +15,8 @@
     "db:migrate:test": "dotenv -e .env.test -- drizzle-kit migrate",
     "pretest": "pnpm run db:migrate:test",
     "pretest:watch": "pnpm run db:migrate:test",
-    "build": "tsup-node"
+    "build": "tsup --format esm",
+    "start": "node dist/server.mjs" 
   },
   "keywords": [],
   "author": "",
